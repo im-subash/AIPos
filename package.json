@@ -7,12 +7,18 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "patch-package"
   },
   "dependencies": {
+    "@react-native/new-app-screen": "0.80.2",
+    "@tensorflow/tfjs": "4.22.0",
+    "@tensorflow/tfjs-react-native": "1.0.0",
+    "patch-package": "^8.0.0",
     "react": "19.1.0",
     "react-native": "0.80.2",
-    "@react-native/new-app-screen": "0.80.2"
+    "react-native-fast-tflite": "^1.6.1",
+    "react-native-fs": "2.20.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
