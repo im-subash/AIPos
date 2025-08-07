@@ -22,10 +22,10 @@ const menuItems = [
 export default function App() {
   // Load AI models
   const { model: comboModel } = useTensorflowModel(
-    require('./src/assets/pos_combo_model.tflite'),
+    require('./src/assets/output_combo.tflite'),
   );
   const { model: kitchenModel } = useTensorflowModel(
-    require('./src/assets/kitchen_load_model.tflite'),
+    require('./src/assets/output_kitchenload.tflite'),
   );
 
   // Order & Recommendation State
