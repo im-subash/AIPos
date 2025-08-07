@@ -4,7 +4,7 @@ import { useTensorflowModel } from 'react-native-fast-tflite';
 
 export default function App() {
   const { model, error } = useTensorflowModel(
-    require('./src/assets/pos_model.tflite'),
+    require('./src/assets/output_predection.tflite'),
   );
   const [order, setOrder] = useState({ burger: 0, pizza: 0, coffee: 0 });
   const [recommendations, setRecommendations] = useState([]);
